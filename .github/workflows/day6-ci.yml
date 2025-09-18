@@ -1,0 +1,13 @@
+name: Day6-CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Print message
+        run: echo 'Hello DevOps Day6 - CI/CD workflow'
